@@ -30,4 +30,5 @@
   <div id="clientes">
     <a href="../visao/cliente/cliente.php"><img id="imgcliente" src="../imagens/clientes.jpg"><h1 id="txtClientes">CLIENTES</h1></a>
   </div>
+  
 </body>
