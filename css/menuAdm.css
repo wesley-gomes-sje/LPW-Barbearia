@@ -1,0 +1,216 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;
+}
+#cabecalho{
+    background-color:   #FFDE59;
+    width: 100%;
+    height: 80px;
+}
+
+#cabecalho h1{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+#cabecalho #logo{
+    position: absolute;
+    width: 150px;
+    top: -30px;
+    left: 25px;
+}
+#cabecalho #usuario{
+    position: absolute;
+    width: 50px;
+    top: 15px;
+    left: 1100px;
+
+}
+
+#msg{
+    position: absolute;
+    width: 100px;
+    top: 11px;
+    left: 580px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+background-color: #545454;
+}
+#cortes{
+    display: inline-block;
+    background-color: black;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 300px;
+    max-width: 100%;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0,4s;
+}
+#cortes:hover{
+    transition: 0.5s;
+    -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+
+}
+#imgcorte{
+    width: 300px;
+}
+
+#txtCorte{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#txtCorte:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+}
+/* HORARIOS*/
+
+#horarios{
+    display: inline-block;
+    background-color: black;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 300px;
+    max-width: 100%;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0,4s;
+}
+#horarios:hover{
+    transition: 0.5s;
+    -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+#imghorario{
+    width: 300px;
+}
+#txtHorario{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#txtHorario:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+}
+
+/*CLIENTES*/
+
+#clientes{
+    display: inline-block;
+    background-color: black;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 300px;
+    max-width: 100%;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0,4s;
+}
+#clientes:hover{
+    transition: 0.5s;
+    -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+#imgcliente{
+    width: 300px;
+}
+#txtClientes{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#txtClientes:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#formulario{
+   
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 480px;
+    height: 300px;
+    margin: 150px auto 0px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#lista{
+
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 480px;
+    margin: 150px auto 0px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+#tudo{
+    display: flex;
+}
+label{
+    font-size: 20px;
+}
+table{
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 20px;
+}
+
+#btnSalvar{
+
+    background-color: orange;
+   font-weight: bold;
+   font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+}
+#btnSalvar:hover{
+    background-color: black;
+    color: orange;
+    transition: 0.4s;
+}
+input{
+    text-align: center;
+    height: 40px;
+}
+.btn-editar{
+    background-color: rgb(56, 197, 56);
+    width: 80px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn-excluir{
+    background-color: rgb(221, 60, 60);
+    width: 80px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

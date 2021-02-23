@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 40px;
+    border: 2px solid rgb(14, 13, 13);
+    font-size: 16pt;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,0.01);
+}
+input[type=submit]{
+    background-color: rgb(218, 150, 24);
+    width: 440px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+  transition: 0.5s;
+}
+
+body{
+    background-image: url("../../imagens/fundo.jpg");
+    background-position: 250% 0%;
+}
+#corpoForm{
+    background-color: rgba(170, 165, 165, 0.507);
+    width: 480px;
+    margin: 150px auto 0px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#corpoFormCad{
+    background-color: rgba(170, 165, 165, 0.507);
+    width: 480px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;;
+}
+
+a{
+    color: white ;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div#msgCadastro{
+    width: 480px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(50,205,50,.5);
+    border: 1px solid rgb(34,139,34);
+
+}
+div#msgErro{
+
+    width: 480px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(250,128,144,.5);
+    border: 1px solid rgb(165, 42,42);
+    
+}
+div#semmsg{
+    display: none;
+}

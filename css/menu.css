@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;
+}
+#cabecalho{
+    background-color:   #FFDE59;
+    width: 100%;
+    height: 80px;
+}
+
+#cabecalho h1{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+#cabecalho #logo{
+    position: absolute;
+    width: 150px;
+    top: -30px;
+    left: 25px;
+}
+#cabecalho #usuario{
+    position: absolute;
+    width: 50px;
+    top: 15px;
+    left: 1100px;
+
+}
+
+#msg{
+    position: absolute;
+    width: 100px;
+    top: 11px;
+    left: 580px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+background-color: #545454;
+}
+#cortes{
+    display: inline-block;
+    background-color: black;
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 300px;
+    max-width: 100%;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0,4s;
+}
+#cortes:hover{
+    transition: 0.5s;
+    -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+
+}
+#imgcorte{
+    width: 300px;
+}
+
+#txtCorte{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#txtCorte:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+}
+/* HORARIOS*/
+
+#horarios{
+    display: inline-block;
+    background-color: black;
+    margin-left: 450px;
+    margin-top: 30px;
+    width: 300px;
+    max-width: 100%;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0,4s;
+}
+#horarios:hover{
+    transition: 0.5s;
+    -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+#imghorario{
+    width: 300px;
+}
+#txtHorario{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#txtHorario:hover{
+    background-color: black;
+    color: rgb(218, 150, 24);
+}
+
+/*CLIENTES*/
