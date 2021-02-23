@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['data'])) {
- require_once "../conexao.php";
+    require_once "../conexao.php";
     require_once "../modelo/horarioModelo.php";
     //$dataP = addslashes($_POST['dataP']);
     //echo $dataP;
@@ -11,8 +11,11 @@ if (isset($_POST['data'])) {
     $mHorario->setdata($data);
     $mHorario->sethora($hora);
     //$mHorario->pesquisar($dataP);
-    if($mHorario->editar($id,$data,$hora)== true){
+    if ($mHorario->editar($id, $data, $hora) == true) {
         header("Location: ../visao/horario/horario.php");
     }
-    
+   else if ($mHorario->excluir($id)) {
+        header("Location: ../visao/horario/horario.php");
+    }
 }
+

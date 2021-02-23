@@ -20,7 +20,7 @@ try {
                     <a href="./editar.php?id='.$linha['idHorario'].'">
                     <button type="button" class="btn-editar">Editar</button>
                     </a>
-                    <a href="./excluir.php?id=' . $linha['idHorario'] . '">
+                    <a href="../../controle/excluir.php?id=' . $linha['idHorario'] . '">
                     <button type="button" class="btn-excluir">Excluir</button>
                     </a>
                     </td>
@@ -34,4 +34,3 @@ try {
     $e->getMessage();
     return array();
 }
-?>
