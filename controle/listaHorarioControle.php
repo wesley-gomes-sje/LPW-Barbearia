@@ -1,9 +1,9 @@
 <?php
-require_once "../../modelo/vendaModelo.php";
+require_once "../../modelo/meuCorteModelo.php";
 session_start();
 $idUsuario= $_SESSION['id'];
-$mVenda = new vendaModelo();
-if($mVenda->listaHorario($idUsuario)== true){
+$mCorte = new meuCorteModelo();
+if($mCorte->listaHorario($idUsuario)== true){
     header("Location:../visao/horario/meuhorario.php");
 }
 

@@ -23,7 +23,7 @@ h1{
 }
 #cartao{
     display: flex;
-    background-color:  #FFDE59;
+    background-color:grey;
     width: 50%;
     height: 220px;
     margin-left: auto;
@@ -33,10 +33,7 @@ h1{
 		box-shadow:         20px 10px 5px rgba(50, 50, 50, 0.77);
         -moz-transition: all 0.4s;
         -webkit-transition: all 0.4s;
-        transition: all 0,4s;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
+        transition: all 0,4s;;
 
 }
 #cartao:hover{
@@ -54,16 +51,29 @@ h1{
 }
 #esquerda{
     position: relative;
-width: 50%;
+    width: 40%;
 }
 #direita{
     position: relative;
-    width: 50%;
+    width: 60%;
+    
     text-align: center;
 }
-p{
+#feito{
+    width: 100%;
+    height: 25%;
+    
+    background-color:black;
+    color:greenyellow;
     font-size: 25px;
-    height: 10px;
+    font-weight: bold;
+    border:none;
+
+}
+p{
+    font-size: 20px;
+
+    height: 5px;
     font-weight: bold;
 }
 

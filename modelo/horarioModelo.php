@@ -1,6 +1,5 @@
 
 <?php
-
 class horarioModelo
 {
     private $idHorario;
@@ -152,4 +151,24 @@ class horarioModelo
             return false;
         }
     }
+    public function feito($idVenda){
+        $conexao = new conexao();
+        try {
+            $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
+            $sql = 'UPDATE venda set status = 0 WHERE idVenda=:id;';
+            $pre = $con->prepare($sql);
+            $pre->bindValue(":id", $idVenda);
+            if ($pre->execute()) {
+                return true;
+            } else {
+                print_r($pre->errorInfo());
+
+                return false;
+            }
+        } catch (PDOException $erro) {
+            echo $erro->getMessage();
+            return false;
+        }
+    }
+
 }

@@ -22,7 +22,7 @@
     </article>
   </div>
     <div id="cortes">
-    <a href="./cortes/corteadm.php"><img id="imgcorte" src="../imagens/cortes.jpg"><h1 id="txtCorte">CORTES</h1></a>
+    <a href="./cortes/clienteCorte.php"><img id="imgcorte" src="../imagens/agenda.jpg"><h1 id="txtCorte">AGENDA</h1></a>
    </div>
    <div id="horarios">
      <a href="../visao/horario/horario.php"> <img id="imghorario" src="../imagens/horario.jpg"><h1 id="txtHorario">HORARIOS</h1> </a>

@@ -16,6 +16,7 @@ if($mVenda->salvarVenda() == true){
 
 }
 else{
+
     header("Location:../visao/menuUsuario.php?id=msgErro&msg=Erro%20ao%20tentar%20marcar%20o%20horario!!");
 
 }

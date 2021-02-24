@@ -5,7 +5,7 @@ try {
     $conexao = new conexao();
 
     $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
-    $sql = $con->prepare("SELECT idHorario, data,hora FROM horario WHERE status=1;");
+    $sql = $con->prepare("SELECT idHorario, data,hora FROM horario WHERE status=1 ORDER BY data, hora ASC ;");
     $sql->execute();
     if ($sql->rowCount() > 0) {
         $query = $sql->fetchAll(PDO::FETCH_ASSOC);
