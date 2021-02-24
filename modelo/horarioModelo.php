@@ -132,4 +132,24 @@ class horarioModelo
             return false;
         }
     }
+    public function atualizar($idHorario)
+    {
+        $conexao = new conexao();
+        try {
+            $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
+            $sql = 'UPDATE horario set status =2 WHERE idHorario=:id;';
+            $pre = $con->prepare($sql);
+            $pre->bindValue(":id", $idHorario);
+            if ($pre->execute()) {
+                return true;
+            } else {
+                print_r($pre->errorInfo());
+
+                return false;
+            }
+        } catch (PDOException $erro) {
+            echo $erro->getMessage();
+            return false;
+        }
+    }
 }

@@ -106,5 +106,29 @@ background-color: #545454;
     background-color: black;
     color: rgb(218, 150, 24);
 }
+div#msgErro{
 
+    position: absolute;
+    width: 450px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(248, 31, 60, 0.5);
+    border: 1px solid rgb(165, 42,42);
+    font-size: 20px;
+    font-weight: bold;
+    left: 450PX;
+    top: 80px;
+}
+div#msgCerto{
+    position: absolute;
+    width: 450px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(50,205,50,.5);
+    border: 1px solid rgb(34,139,34);
+    font-size: 20px;
+    font-weight: bold;
+    left: 450PX;
+    top: 80px;
+}
 /*CLIENTES*/

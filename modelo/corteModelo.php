@@ -17,12 +17,13 @@ try{
               <div id='direita'>
               <div id='nome'> <p>".$linha['nomeCorte'] ."</p>  </div>
               <div id='preco'> <p> R$ ".$linha['preco'] ."</p>  </div>
+              <a href='./cortar.php?id=".$linha['idCorte']."'>
               <input id='cortar' type='submit' name='corte' value='CORTAR'>
+              </a>
               </div>
               </div>
               <br>
            ";
-           
         }
         }
 }catch (PDOException $e) {
