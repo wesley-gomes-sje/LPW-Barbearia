@@ -5,7 +5,7 @@ try {
     $conexao = new conexao();
 
     $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
-    $sql = $con->prepare("SELECT idHorario, data,hora FROM horario WHERE status=1 ORDER BY data, hora ASC ;");
+    $sql = $con->prepare("SELECT idHorario,date_format(`data`,'%d/%m/%Y') AS data,hora FROM horario WHERE status=1 ORDER BY data, hora ASC ;");
     $sql->execute();
     if ($sql->rowCount() > 0) {
         $query = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -20,7 +20,7 @@ try {
                     <form action="../../controle/salvar.php" method="POST">
                     <input type="hidden" name="idCorte" value="'.$_GET['id'].'">
                     <input type="hidden" name="idHora" value="'.$linha['idHorario'].'">
-                    <button type="subimit" class="btn-editar">Agendar</button>
+                    <button type="subimit" class="btn-agendar">Agendar</button>
                     </form>
                     </td>
                     </tr>';

@@ -5,7 +5,7 @@ require_once '../../conexao.php';
 try {
     $conexao = new conexao();
     $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
-    $sql = $con->prepare("SELECT v.idVenda,u.nome,u.telefone,c.nomeCorte,c.preco,h.data,h.hora FROM venda v INNER JOIN usuario u ON v.idUsuario=u.idUsuario INNER JOIN corte c ON v.idCorte=c.idCorte INNER JOIN horario h ON v.idHorario=h.idHorario WHERE v.status= 1 ORDER BY h.data,h.data ASC ;");
+    $sql = $con->prepare("SELECT v.idVenda,u.nome,u.telefone,c.nomeCorte,c.preco,date_format(`data`,'%d/%m/%Y') AS data,h.hora FROM venda v INNER JOIN usuario u ON v.idUsuario=u.idUsuario INNER JOIN corte c ON v.idCorte=c.idCorte INNER JOIN horario h ON v.idHorario=h.idHorario WHERE v.status= 1 ORDER BY h.data,h.data ASC ;");
     $sql->execute();
     if ($sql->rowCount() > 0) {
         $query = $sql->fetchAll(PDO::FETCH_ASSOC);

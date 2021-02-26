@@ -4,7 +4,7 @@
     box-sizing: border-box ;
 }
 #cabecalho{
-    background-color:   #FFDE59;
+    background-color:#FFDE59;
     width: 100%;
     height: 80px;
 }
@@ -27,7 +27,12 @@
     left: 1100px;
 
 }
-
+#exit{
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    width: 60px;
+}
 #msg{
     position: absolute;
     width: 100px;

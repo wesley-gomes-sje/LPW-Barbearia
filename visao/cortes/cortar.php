@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="../../imagens/anonimo.png" />
   <link rel="stylesheet" href="../../css/menuAdm.css">
   <div id="cabecalho">
-    <a id="voltar" href="../menuUsuario.php"><img id="logo" src="../../imagens/bigode.png"></a>
+    <a id="voltar" href="../cortes/corte.php"><img id="logo" src="../../imagens/bigode.png"></a>
     <h1>Horarios</h1>
   </div>
 </head>

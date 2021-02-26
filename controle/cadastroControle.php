@@ -9,7 +9,6 @@ if (isset($_POST['nome'])) {
 
     $mUsuario = new usuarioModelo();
     $mUsuario->setnome($nome);
-    
     $mUsuario->settelefone($telefone);
     $mUsuario->setsenha($senha);
 

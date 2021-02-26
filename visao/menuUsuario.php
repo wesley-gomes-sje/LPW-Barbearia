@@ -22,6 +22,9 @@ if (array_key_exists("id", $_GET) && array_key_exists("msg", $_GET)) {
     <h1>BARBEARIA SHELBY</h1>
     <img id="logo" src="../imagens/bigode.png">
     <img id="usuario" src="../imagens/usuario.png.png">
+    
+    <a id="sair" href="../visao/login/login.php"><img id="exit" src="../imagens/exit.png"> </a>;
+    
     <article id="msg">
       <?php
       session_start();

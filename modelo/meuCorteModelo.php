@@ -8,7 +8,7 @@ class meuCorteModelo
         $conexao = new conexao();
         try {
             $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
-            $sql = $con->prepare("SELECT v.idVenda,h.idHorario,c.idCorte,c.nomeCorte,c.preco,c.imagem,h.data,h.hora FROM venda v INNER JOIN usuario u ON v.idUsuario=u.idUsuario INNER JOIN horario h ON v.idHorario=h.idHorario  INNER JOIN corte c ON v.idCorte=c.idCorte  WHERE u.idUsuario=:idUsuario AND v.status=1 ORDER BY h.data, h.hora ASC ;");
+            $sql = $con->prepare("SELECT v.idVenda,h.idHorario,c.idCorte,c.nomeCorte,c.preco,c.imagem,date_format(`data`,'%d/%m/%Y') AS data,h.hora FROM venda v INNER JOIN usuario u ON v.idUsuario=u.idUsuario INNER JOIN horario h ON v.idHorario=h.idHorario  INNER JOIN corte c ON v.idCorte=c.idCorte  WHERE u.idUsuario=:idUsuario AND v.status=1 ORDER BY h.data, h.hora ASC ;");
             $sql->bindValue(":idUsuario",$id);
             $sql->execute();
             if ($sql->rowCount() > 0) {
@@ -23,7 +23,6 @@ class meuCorteModelo
                             <div id='preco'> <p>Preço: R$ " . $linha['preco'] . "</p></div>
                             <div id='data'> <p> Data: " . $linha['data'] . "</p></div>
                             <div id='hora'> <p>Hora: " . $linha['hora'] . "</p></div>
-                        
                         </div>
                         </div>
                         <br>
