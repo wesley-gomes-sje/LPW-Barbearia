@@ -27,7 +27,12 @@
     left: 1100px;
 
 }
-
+#exit{
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    width: 60px;
+}
 #msg{
     position: absolute;
     width: 100px;

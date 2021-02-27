@@ -1,3 +1,8 @@
+<?php 
+session_start();
+require_once "../../conexao.php";
+require_once "../../modelo/horarioModelo.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,8 +31,6 @@
             <h1>Editar Horarios</h1>
             <form method="POST" action="../../controle/editarControl.php">
                 <?php
-                require_once "../../conexao.php";
-                require_once "../../modelo/horarioModelo.php";
                 $id = $_GET['id'];
                 $mHorario = new horarioModelo();
                 $mHorario->pesquisar($id);

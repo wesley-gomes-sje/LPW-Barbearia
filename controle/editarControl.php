@@ -1,7 +1,8 @@
 <?php
+require_once "../conexao.php";
+require_once "../modelo/horarioModelo.php";
 if (isset($_POST['data'])) {
-    require_once "../conexao.php";
-    require_once "../modelo/horarioModelo.php";
+    
     //$dataP = addslashes($_POST['dataP']);
     //echo $dataP;
     $id = addslashes($_POST['id']);

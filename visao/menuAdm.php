@@ -1,6 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,10 @@
     <h1>BARBEARIA SHELBY</h1>
     <img id="logo" src="../imagens/bigode.png">
     <img id="usuario" src="../imagens/usuario.png.png">
+    <a id="sair" href="../visao/login/login.php"><img id="exit" src="../imagens/exit.png"> </a>;
     <article id="msg">
       <?php
-      session_start();
+      
       echo '<div id="msg">Seja bem vindo <br>' . $_SESSION['nome'] . '</br> </div>';
       ?>
     </article>

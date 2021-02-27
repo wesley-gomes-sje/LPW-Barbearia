@@ -1,7 +1,7 @@
 
 <?php
+require_once '../modelo/usuarioModelo.php';
 if (isset($_POST['nome'])) {
-    require_once '../modelo/usuarioModelo.php';
     $nome = addslashes($_POST['nome']);
     $telefone = addslashes($_POST['telefone']);
     $senha = addslashes($_POST['senha']);
@@ -18,7 +18,7 @@ if (isset($_POST['nome'])) {
     } else {
 
         if ($senha == $confSenha) {
-            var_dump($mUsuario->verificar($nome));
+            // var_dump($mUsuario->verificar($nome));
             if ($mUsuario->verificar($nome) == true) {
 
                 header("Location: ../visao/cadastro/cadastro.php?id=msgErro&msg=Erro!%20Usuario%20existente!!");

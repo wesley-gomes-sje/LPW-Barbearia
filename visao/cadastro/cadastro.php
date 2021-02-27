@@ -32,7 +32,7 @@ if (array_key_exists("id", $_GET) && array_key_exists("msg", $_GET)) {
         <h1>CADASTRO</h1>
 
         <form action="../../controle/cadastroControle.php" method="post">
-            <input type="text" name="nome" placeholder="Login" maxlength="80">
+            <input type="text" name="nome" placeholder="Nome" maxlength="80">
             <input type="text" onkeypress="return event.charCode >= 48 && event.charCode<=57" name="telefone" placeholder="Telefone" maxlength="11">
             <input type="password" name="senha" placeholder="Senha">
             <input type="password" name="confSenha" placeholder="Confirmar senha">

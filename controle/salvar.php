@@ -1,7 +1,7 @@
 <?php
+session_start();
 require_once "../modelo/vendaModelo.php";
 require_once "../modelo/horarioModelo.php";
-session_start();
 $idUsuario= $_SESSION['id'];
 $idCorte = addslashes($_POST['idCorte']);
 $idHora = addslashes($_POST['idHora']);

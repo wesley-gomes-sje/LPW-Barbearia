@@ -23,7 +23,7 @@
 <div id="tudo">
   <div id="formulario">
     <h1>Cadastrar Horarios</h1>
-    <form method="POST" action="../../controle/horario.Controle.php">
+    <form method="POST" action="../../controle/horarioControle.php">
       <label for="data">Data</label>
       <input type="date" id="data" name="data" onclick="datamin()" required>
       <label for="hora">Hora</label>
